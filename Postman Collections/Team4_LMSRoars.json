@@ -1037,20 +1037,9 @@
 			"name": "GET_ALL_BATCHES",
 			"event": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"id": "4aabf110-8394-4ba7-96c6-36b0979827e0",
-						"exec": [
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				},
-				{
 					"listen": "test",
 					"script": {
-						"id": "f105e728-7bd3-4956-aa0b-b097c1b40e07",
+						"id": "281601e2-4216-4233-8332-e6a3f623addf",
 						"exec": [
 							"var GetAllbathchesSchema={\r",
 							"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
@@ -1168,6 +1157,18 @@
 							"}\r",
 							"\r",
 							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "29b6d915-0b5f-4908-81cf-c6b797d39104",
+						"exec": [
+							"var method=pm.variables.get('method');\r",
+							"pm.variables.set('METHOD',method);"
 						],
 						"type": "text/javascript",
 						"packages": {}
