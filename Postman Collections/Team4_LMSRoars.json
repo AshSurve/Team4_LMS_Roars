@@ -2089,6 +2089,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUyNjgzMSwiZXhwIjoxNzMxNTU1NjMxfQ.lBLGhezeqsJSsRb2cnGcc0bV0LseHVtQy0oTnntkF1PGId5B0wCMO9x_rwEhFG1gqK34y15LWpju_am_0ka2kQ"
+					}
+				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"body": {
@@ -2148,6 +2154,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUyNjgzMSwiZXhwIjoxNzMxNTU1NjMxfQ.lBLGhezeqsJSsRb2cnGcc0bV0LseHVtQy0oTnntkF1PGId5B0wCMO9x_rwEhFG1gqK34y15LWpju_am_0ka2kQ"
+					}
+				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"url": "{{baseURL}}{{endpoint}}"
@@ -2245,6 +2257,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUyNjgzMSwiZXhwIjoxNzMxNTU1NjMxfQ.lBLGhezeqsJSsRb2cnGcc0bV0LseHVtQy0oTnntkF1PGId5B0wCMO9x_rwEhFG1gqK34y15LWpju_am_0ka2kQ"
+					}
+				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"body": {
@@ -2296,6 +2314,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUyNjgzMSwiZXhwIjoxNzMxNTU1NjMxfQ.lBLGhezeqsJSsRb2cnGcc0bV0LseHVtQy0oTnntkF1PGId5B0wCMO9x_rwEhFG1gqK34y15LWpju_am_0ka2kQ"
+					}
+				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"body": {
@@ -2356,6 +2380,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUyNjgzMSwiZXhwIjoxNzMxNTU1NjMxfQ.lBLGhezeqsJSsRb2cnGcc0bV0LseHVtQy0oTnntkF1PGId5B0wCMO9x_rwEhFG1gqK34y15LWpju_am_0ka2kQ"
+					}
+				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"body": {
@@ -3909,7 +3939,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "033e709c-1b96-4afb-9405-fd88e31d54c3",
+				"id": "e22bf9f5-1505-419d-bc07-5336e15175f3",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -3957,7 +3987,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9dbd25c4-6848-4596-8aa4-47580a372efc",
+				"id": "bce33b8f-fe8c-4a15-8f05-d8d2e3a05cba",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -3971,10 +4001,6 @@
 			"key": "baseURL",
 			"value": "https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/",
 			"type": "string"
-		},
-		{
-			"key": "token",
-			"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMTUxNzkyNiwiZXhwIjoxNzMxNTQ2NzI2fQ.OmezMicEimmfmYvPq5Xp20Pui_NbSzK7m8XKgFC235rROyFxwVyhoE6PK4ZdVcFb8pOiYS4N5Ys-oWuZ8u7FUw"
 		},
 		{
 			"key": "programId1",
