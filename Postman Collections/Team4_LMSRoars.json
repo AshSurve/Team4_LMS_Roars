@@ -3860,7 +3860,7 @@
 							"    \r",
 							"    // Define an array of possible error messages\r",
 							"    const expectedMessages = [\r",
-							"        \"record not found with {classId}\",\r",
+							"        \"record not found with classId\",\r",
 							"        \"Invalid endpoint\"\r",
 							"    ];\r",
 							"\r",
