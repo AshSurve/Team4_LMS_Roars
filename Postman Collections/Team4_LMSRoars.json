@@ -903,7 +903,7 @@
 							"pm.test(\"Validate Program Name in response\", function () {   \r",
 							"  var program_name = pm.collectionVariables.get(\"programName1\");\r",
 							"  var result = pm.response.json();\r",
-							"  var pgmName=result.programName;\r",
+							" var pgmName=result.programName;\r",
 							" pm.expect(program_name).to.eql(pgmName);\r",
 							" console.log(pgmName);\r",
 							" console.log(program_name);\r",
