@@ -3259,10 +3259,10 @@
 							"    });\r",
 							"} \r",
 							"\r",
-							"// If the status code is neither 200 nor 404, log an error for unexpected responses\r",
+							"// If the response status code is 401, handle the error message specifically\r",
 							"else if (pm.response.code === 401) {\r",
-							"    //console.error(\"Unexpected status code for negative case.\");\r",
-							"    consol.log(\"this if for cls id 0\");\r",
+							"   \r",
+							"    consol.log(\"this if for class id 0\");\r",
 							"}\r",
 							""
 						],
