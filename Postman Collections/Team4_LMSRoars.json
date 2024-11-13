@@ -41,6 +41,7 @@
 							"    console.log(\"bearer token set as collection variable: \" + result.token);\r",
 							"    // UserId\r",
 							"    pm.collectionVariables.set(\"userId\",result.userId);\r",
+							"    console.log(\"UserId\", result.userId);\r",
 							"\r",
 							"//2.Token Authentication and data Validation\r",
 							"\r",
