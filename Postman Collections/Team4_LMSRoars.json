@@ -1008,32 +1008,35 @@
 						"id": "a55e81aa-1e57-46a8-8ee7-32358edeb589",
 						"exec": [
 							"\r",
+							"\r",
 							"var programDescription = pm.variables.get(\"programDescription\");\r",
 							"var program_ID = pm.collectionVariables.get(\"programId2\");\r",
 							"var program_name = pm.collectionVariables.get(\"programName2\");\r",
 							"var program=pm.variables.get(\"programName2\");\r",
 							"var programStatus=pm.variables.get('programStatus');\r",
 							"\r",
-							"// Create the  body object\r",
+							"// Create the base body object\r",
 							"var bodyJson = {        \r",
 							"    \r",
 							"};\r",
-							"\r",
-							"// add program_description if programDescription is provided in json\r",
+							"//  program_description if programDescription is provided in json\r",
 							"if (programDescription && programDescription !== \"\") {\r",
 							"    bodyJson.programDescription = programDescription;\r",
 							"}\r",
-							"//  add programStatus if programDescription is provided in json\r",
-							"if (programStatus && programStatus.trim() !== \"\") {\r",
+							"// add programStatus if program status is provided in json\r",
+							"if ( programStatus && programStatus.trim() !== \"\" && programStatus !==\"Without Mandatory Field--Status\") {\r",
 							"    bodyJson.programStatus = programStatus;\r",
 							"}\r",
 							"\r",
-							"// add program_description if programDescription is provided in json\r",
-							"if (program && program.trim() !== \"\" && program !==\"Without Mandatory Fields- Name & Status\") {\r",
-							"        bodyJson.programName = program_name;\r",
+							"//  add program_description if programDescription is provided in json\r",
+							"if (program && program.trim() !== \"\" && program !==\"Without Mandatory Field-Name\") {\r",
+							"    console.log('Adding Program Name');\r",
+							"    bodyJson.programName = program_name;\r",
 							"}else {\r",
-							"    \r",
-							"}\r",
+							"     console.log('NOT Adding Program Name');\r",
+							"     }\r",
+							"\r",
+							"\r",
 							"// Set the updated body to the request\r",
 							"pm.request.body.raw = JSON.stringify(bodyJson);"
 						],
@@ -4024,7 +4027,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a500bd3f-da77-47f6-9ef6-0f71b8114dc4",
+				"id": "71f95820-9ac2-4cdf-a1f9-e45d1f3bbc28",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -4072,7 +4075,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8959102b-8399-48c1-a022-460c8defdfda",
+				"id": "045f002c-b49b-4acb-909d-d251dca5078e",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -4108,6 +4111,11 @@
 			"value": ""
 		},
 		{
+			"key": "prg1_batchId2",
+			"value": "",
+			"type": "string"
+		},
+		{
 			"key": "classId",
 			"value": ""
 		},
@@ -4121,10 +4129,6 @@
 		},
 		{
 			"key": "token",
-			"value": ""
-		},
-		{
-			"key": "batchID",
 			"value": ""
 		},
 		{
