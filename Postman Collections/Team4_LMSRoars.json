@@ -3261,10 +3261,8 @@
 							"\r",
 							"// If the response status code is 401, handle the error message specifically\r",
 							"else if (pm.response.code === 401) {\r",
-							"   \r",
-							"    consol.log(\"this if for class id 0\");\r",
-							"}\r",
-							""
+							"    console.log(\"This is for class id 0\");\r",
+							"}"
 						],
 						"type": "text/javascript",
 						"packages": {}
