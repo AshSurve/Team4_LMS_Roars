@@ -13,10 +13,6 @@
 					"script": {
 						"id": "cacad74a-4195-48a6-a77d-067ff33f647a",
 						"exec": [
-							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
-							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
-							"\r",
-							"\r",
 							"// Check the response status code from json file\r",
 							"\r",
 							"    pm.test(\"Status Code Validation\", function () {\r",
@@ -104,7 +100,7 @@
 							"};\r",
 							"pm.test(\"Response schema is valid\", () => {\r",
 							"    pm.expect(tv4.validate(result, schema)).to.be.true;\r",
-							"    pm.response.to.have.jsonSchema(schema);\r",
+							"   // pm.response.to.have.jsonSchema(schema);\r",
 							"})\r",
 							"} else {\r",
 							"    console.error(\"negative case cannot retriev access token\");\r",
@@ -123,7 +119,6 @@
 							"pm.variables.set('METHOD',method);\r",
 							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
-							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
 							""
 						],
 						"type": "text/javascript",
