@@ -99,7 +99,8 @@
 							"  ]\r",
 							"};\r",
 							"pm.test(\"Response schema is valid\", () => {\r",
-							"    pm.expect(ajv.validate(result, schema)).to.be.true;\r",
+							"    //pm.expect(ajv.validate(result, schema)).to.be.true;\r",
+							"     pm.expect(tv4.validate(responseText, schema)).to.be.true;\r",
 							"   \r",
 							"})\r",
 							"} else {\r",
@@ -4257,6 +4258,46 @@
 		},
 		{
 			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "classTopic",
+			"value": ""
+		},
+		{
+			"key": "classDate",
+			"value": ""
+		},
+		{
+			"key": "classNo",
+			"value": ""
+		},
+		{
+			"key": "classStaffId",
+			"value": ""
+		},
+		{
+			"key": "classStatus",
+			"value": ""
+		},
+		{
+			"key": "classDescription",
+			"value": ""
+		},
+		{
+			"key": "classComments",
+			"value": ""
+		},
+		{
+			"key": "classNotes",
+			"value": ""
+		},
+		{
+			"key": "classRecordingPath",
+			"value": ""
+		},
+		{
+			"key": "classScheduledDates",
 			"value": ""
 		}
 	]
