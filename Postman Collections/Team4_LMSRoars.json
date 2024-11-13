@@ -100,7 +100,7 @@
 							"};\r",
 							"pm.test(\"Response schema is valid\", () => {\r",
 							"    pm.expect(tv4.validate(result, schema)).to.be.true;\r",
-							"   // pm.response.to.have.jsonSchema(schema);\r",
+							"   \r",
 							"})\r",
 							"} else {\r",
 							"    console.error(\"negative case cannot retriev access token\");\r",
