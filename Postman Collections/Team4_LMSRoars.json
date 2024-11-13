@@ -319,6 +319,7 @@
 							"    pm.response.to.have.jsonSchema(GetAllPgm);\r",
 							"  });\r",
 							"\r",
+							"\r",
 							"  //3.content type validation\r",
 							"  pm.test(\"Content-Type is application/json\", () => {\r",
 							"      pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
@@ -669,7 +670,13 @@
 							"    pm.response.to.have.jsonSchema(PostSchema);\r",
 							"  });\r",
 							"\r",
-							"\r",
+							"pm.test(\"Response has all required fields\", () => {\r",
+							"    pm.expect(result).to.have.property(\"programId\");\r",
+							"    pm.expect(result).to.have.property(\"programDescription\");\r",
+							"    pm.expect(result).to.have.property(\"programStatus\");\r",
+							"    pm.expect(result).to.have.property(\"creationTime\");\r",
+							"    pm.expect(result).to.have.property(\"lastModTime\")\r",
+							"  });\r",
 							"\r",
 							" //3.content type validation\r",
 							"  \r",
@@ -818,7 +825,13 @@
 							"    pm.response.to.have.jsonSchema(PgmSchema);\r",
 							"  })\r",
 							"\r",
-							" \r",
+							" pm.test(\"Response has all required fields\", () => {\r",
+							"    pm.expect(result).to.have.property(\"programId\");\r",
+							"    pm.expect(result).to.have.property(\"programDescription\");\r",
+							"    pm.expect(result).to.have.property(\"programStatus\");\r",
+							"    pm.expect(result).to.have.property(\"creationTime\");\r",
+							"    pm.expect(result).to.have.property(\"lastModTime\")\r",
+							"  });\r",
 							"\r",
 							"   //3.content type validation\r",
 							"  pm.test(\"Content-Type is application/json\", () => {\r",
@@ -4111,11 +4124,6 @@
 			"value": ""
 		},
 		{
-			"key": "prg1_batchId2",
-			"value": "",
-			"type": "string"
-		},
-		{
 			"key": "classId",
 			"value": ""
 		},
@@ -4136,43 +4144,7 @@
 			"value": ""
 		},
 		{
-			"key": "classTopic",
-			"value": ""
-		},
-		{
-			"key": "classDate",
-			"value": ""
-		},
-		{
-			"key": "classNo",
-			"value": ""
-		},
-		{
-			"key": "classStaffId",
-			"value": ""
-		},
-		{
-			"key": "classStatus",
-			"value": ""
-		},
-		{
-			"key": "classDescription",
-			"value": ""
-		},
-		{
-			"key": "classComments",
-			"value": ""
-		},
-		{
-			"key": "classNotes",
-			"value": ""
-		},
-		{
-			"key": "classRecordingPath",
-			"value": ""
-		},
-		{
-			"key": "classScheduledDates",
+			"key": "batchID",
 			"value": ""
 		}
 	]
