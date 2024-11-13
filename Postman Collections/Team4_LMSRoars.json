@@ -4024,7 +4024,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1441a927-7b4a-40a7-bee1-fbb2287a0355",
+				"id": "c6f04d6b-53f9-464b-ba64-5139461bcdfb",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -4072,7 +4072,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e7483ee5-0eef-4c6f-bded-aacc0bc4f93c",
+				"id": "498ded42-4569-4445-b0d3-5c826221a69d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -4129,6 +4129,46 @@
 		},
 		{
 			"key": "Token",
+			"value": ""
+		},
+		{
+			"key": "classTopic",
+			"value": ""
+		},
+		{
+			"key": "classDate",
+			"value": ""
+		},
+		{
+			"key": "classNo",
+			"value": ""
+		},
+		{
+			"key": "classStaffId",
+			"value": ""
+		},
+		{
+			"key": "classStatus",
+			"value": ""
+		},
+		{
+			"key": "classDescription",
+			"value": ""
+		},
+		{
+			"key": "classComments",
+			"value": ""
+		},
+		{
+			"key": "classNotes",
+			"value": ""
+		},
+		{
+			"key": "classRecordingPath",
+			"value": ""
+		},
+		{
+			"key": "classScheduledDates",
 			"value": ""
 		}
 	]
