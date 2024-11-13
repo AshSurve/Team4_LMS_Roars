@@ -140,8 +140,6 @@
 						"id": "555ff651-a620-43d0-934b-519cf9e1bf35",
 						"exec": [
 							"\r",
-							"var method=pm.variables.get('method');\r",
-							"pm.variables.set('METHOD',method);\r",
 							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
