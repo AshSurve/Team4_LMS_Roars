@@ -1293,8 +1293,7 @@
 					"script": {
 						"id": "29b6d915-0b5f-4908-81cf-c6b797d39104",
 						"exec": [
-							"var method=pm.variables.get('method');\r",
-							"pm.variables.set('METHOD',method);"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
