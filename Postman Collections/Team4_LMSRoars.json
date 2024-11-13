@@ -3392,21 +3392,9 @@
 			"name": "UPDATE_CLS_REC_PATH_FOR_CLS_ID",
 			"event": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"id": "30414577-ce97-45d3-8495-731c52c7225e",
-						"exec": [
-							"var method=pm.variables.get('method');\r",
-							"pm.variables.set('METHOD',method);"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				},
-				{
 					"listen": "test",
 					"script": {
-						"id": "071dc871-0f89-4aeb-81e9-9753ee9ab7ca",
+						"id": "3f7c544d-3fed-4368-b003-65623c5c7b21",
 						"exec": [
 							"//1.code validation\r",
 							"pm.test(\"Status code is 200 or 201\", () => {\r",
@@ -3529,6 +3517,18 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0b8328e8-d75f-4538-8776-6997dad972ba",
+						"exec": [
+							"var method=pm.variables.get('method');\r",
+							"pm.variables.set('METHOD',method);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"id": "7c877333-1a14-4f76-8476-e970e59d2092",
@@ -3553,7 +3553,7 @@
 						}
 					}
 				},
-				"url": "{{baseURL}}{{updateClassRecPathEndpoint}}/54"
+				"url": "{{baseURL}}{{updateClassRecPathEndpoint}}{{classId}}"
 			},
 			"response": []
 		},
