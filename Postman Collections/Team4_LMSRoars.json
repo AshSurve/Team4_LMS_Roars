@@ -3390,7 +3390,7 @@
 							"            \"classNotes\": { \"type\": \"string\" },\r",
 							"            \"classRecordingPath\": { \"type\": \"string\" },\r",
 							"            \"batchName\": { \"type\": \"string\" },\r",
-							"            \"classScheduledDates\": { \"type\": \"null\" }\r",
+							"            \"classScheduledDates\": { \"type\": \"integer\" }\r",
 							"        },\r",
 							"        \"required\": [\r",
 							"            \"csId\", \"batchId\", \"classNo\", \"classDate\", \"classTopic\",\r",
