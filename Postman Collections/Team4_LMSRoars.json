@@ -4042,6 +4042,60 @@
 				"url": "{{baseURL}}{{allUser_Assigned_PrgBatch_endpoint}}"
 			},
 			"response": []
+		},
+		{
+			"name": "DEL_ALL_PRG BAT_BY USER ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e2db7d42-6aa0-40d8-9794-1437d7dcff8a",
+						"exec": [
+							"pm.test(\"StatusCodeValidation\", function () {\r",
+							" const expStatusCode = pm.variables.get('expectedStatusCode');\r",
+							"    pm.response.to.have.status(expStatusCode);    \r",
+							"});\r",
+							"pm.test(\"Validate Response Message\", function () {   \r",
+							"var responseMessage = pm.response.text();\r",
+							"\r",
+							"if(pm.response.code === 200){\r",
+							"const result = pm.response.json();  \r",
+							"var Actualmesg=result.success;\r",
+							"var expStstusmesg= pm.variables.get('ResponseMessage');\r",
+							" pm.expect(Actualmesg).to.eql(expStstusmesg); \r",
+							"\r",
+							"}else if(pm.response.code === 404) {                    \r",
+							"\r",
+							"        // Check if one of the possible error messages is included in the response\r",
+							"        var possibleMessages = [\r",
+							"            pm.variables.get('message'), \r",
+							"            'no record found with',\r",
+							"            'Application Error',\r",
+							"            'Invalid endpoint',\r",
+							"            \r",
+							"        ];\r",
+							"\r",
+							"        // Assert that one of the possible messages is in the response\r",
+							"        var messageFound = possibleMessages.some(msg => responseMessage.includes(msg));       \r",
+							"       pm.expect(messageFound).to.be.true;\r",
+							"    }\r",
+							"    });"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "c2866a06-c778-4c8d-a10e-9d310b3fa127",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "{{METHOD}}",
+				"header": [],
+				"url": "{{baseURL}}{{Endpoint}}{{userId}}"
+			},
+			"response": []
 		}
 	],
 	"auth": {
