@@ -155,6 +155,113 @@
 			"response": []
 		},
 		{
+			"name": "GET_USERROLE_USRID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f255a861-96da-426c-a28b-fad09716f13c",
+						"exec": [
+							"var PgmSchema=\r",
+							"{\r",
+							"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+							"  \"title\": \"Generated schema for Root\",\r",
+							"  \"type\": \"array\",\r",
+							"  \"items\": {\r",
+							"    \"type\": \"object\",\r",
+							"    \"properties\": {\r",
+							"      \"userId\": {\r",
+							"        \"type\": \"string\"\r",
+							"      },\r",
+							"      \"roleId\": {\r",
+							"        \"type\": \"string\"\r",
+							"      },\r",
+							"      \"programId\": {\r",
+							"        \"type\": \"number\"\r",
+							"      },\r",
+							"      \"batchId\": {\r",
+							"        \"type\": \"number\"\r",
+							"      },\r",
+							"      \"userRoleProgramBatchStatus\": {\r",
+							"        \"type\": \"string\"\r",
+							"      }\r",
+							"    },\r",
+							"    \"required\": [\r",
+							"      \"userId\",\r",
+							"      \"roleId\",\r",
+							"      \"programId\",\r",
+							"      \"batchId\",\r",
+							"      \"userRoleProgramBatchStatus\"\r",
+							"    ]\r",
+							"  }\r",
+							"}\r",
+							" //1.Response  code validation\r",
+							"  pm.test(\"Status Code Validation\", function () {\r",
+							"    pm.expect(pm.response.code).to.equal(pm.variables.get('statuscode'));\r",
+							"});\r",
+							"\r",
+							"if(pm.response.code === 200){\r",
+							"  pm.test(\"Schema Validation\",function () {\r",
+							"    pm.response.to.have.jsonSchema(PgmSchema);\r",
+							"  })\r",
+							"   //3.content type validation\r",
+							" pm.test(\"Content-Type is application/json\", () => {\r",
+							"      pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+							"  });\r",
+							"\r",
+							"   pm.test(\"Data Type Validation\", function () {\r",
+							"    const result = pm.response.json(); \r",
+							"console.log(result);\r",
+							"// Validate programId: should be a number or null\r",
+							"       \r",
+							"       pm.expect(typeof result.userId ===\"string\").to.be.false;\r",
+							"       pm.expect(typeof result.roleId ===\"string\").to.be.false;\r",
+							"       pm.expect(typeof result.userRoleProgramBatchStatus ===\"string\").to.be.false\r",
+							"       pm.expect(typeof result.programId ===\"number\").to.be.false;\r",
+							"       pm.expect(typeof result.batchId ===\"number\").to.be.false;\r",
+							"        //pm.expect(result.userRoleProgramBatchStatus).to.satisfy(val => typeof val === 'string' || val === null);\r",
+							"\r",
+							"        \r",
+							"\r",
+							"    \r",
+							"\r",
+							"        \r",
+							"\r",
+							"\r",
+							"        // Validate roleId: should be a string or null\r",
+							"        \r",
+							"       \r",
+							"        \r",
+							"\r",
+							"    })};\r",
+							"\t\r",
+							"\r",
+							"  "
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "0906edcc-4fc3-4b0b-8f84-65c0f6934cb4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followAuthorizationHeader": false
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{tt}}"
+					}
+				},
+				"method": "{{METHOD}}",
+				"header": [],
+				"url": "{{baseURL}}{{endpoint}}{{userId}}"
+			},
+			"response": []
+		},
+		{
 			"name": "GET_ALL_PGM",
 			"event": [
 				{
