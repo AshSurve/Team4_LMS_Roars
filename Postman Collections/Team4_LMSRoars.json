@@ -909,7 +909,7 @@
 							" console.log(program_name);\r",
 							" var pg = pm.variables.get(\"keys\");\r",
 							" pm.test(\"Are there all of parameters\", function() {\r",
-							"pm.expect(pm.response.json()).to.have.keys(pg);\r",
+							"pm.expect(pm.response.json()).to.have.keys(pg.programDescription);\r",
 							"\r",
 							"});\r",
 							" console.log(pg);\r",
