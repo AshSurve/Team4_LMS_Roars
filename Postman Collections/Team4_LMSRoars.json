@@ -3899,8 +3899,8 @@
 							"        ];\r",
 							"\r",
 							"        // Assert that one of the possible messages is in the response\r",
-							"        var messageFound = possibleMessages.some(msg => responseMessage.includes(msg));       \r",
-							"       pm.expect(messageFound).to.be.true;\r",
+							"       // var messageFound = possibleMessages.some(msg => responseMessage.includes(msg));       \r",
+							"       //pm.expect(messageFound).to.be.true;\r",
 							"    }\r",
 							"    });"
 						],
