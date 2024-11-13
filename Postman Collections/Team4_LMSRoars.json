@@ -13,12 +13,8 @@
 					"script": {
 						"id": "cacad74a-4195-48a6-a77d-067ff33f647a",
 						"exec": [
-							"\r",
-							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
-							"//console.log(\"METHOD NAME IS :\", method);\r",
-							"//console.log(\"Current request data:\", requestData);\r",
 							"\r",
 							"// Check the response status code from json file\r",
 							"    pm.test(\"Status Code Validation\", function () {\r",
@@ -139,12 +135,9 @@
 					"script": {
 						"id": "555ff651-a620-43d0-934b-519cf9e1bf35",
 						"exec": [
-							"\r",
-							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
-							"//console.log(\"METHOD NAME IS :\", method);\r",
-							"console.log(\"Current request data:\", requestData);"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
