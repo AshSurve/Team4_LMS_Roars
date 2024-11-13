@@ -247,9 +247,15 @@
 							"\r",
 							"        // Validate programStatus: should be a string or null\r",
 							"        pm.expect(class_).to.have.property('programStatus');\r",
-							"        pm.expect(class_.programStatus).to.satisfy(val => typeof val === 'programStatus' || val === 'Inactive'|| val=='Active');\r",
+							"        pm.expect(class_.programStatus).to.satisfy(val => typeof val === 'string' || val === null);\r",
 							"\r",
-							" \r",
+							"           // Validate that 'creationTime'  using RegEx\r",
+							"           pm.expect(class_).to.have.property('creationTime');\r",
+							"    pm.expect(class_.creationTime).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3})?([+-]\\d{2}:\\d{2}|Z)$/);\r",
+							"\r",
+							"    // Validate that 'lastModTime'  format using RegEx\r",
+							"    pm.expect(class_).to.have.property('lastModTime');\r",
+							"    pm.expect(jsonData.lastModTime).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3})?([+-]\\d{2}:\\d{2}|Z)$/);\r",
 							"    });\r",
 							"})};\r",
 							"\r",
@@ -3254,7 +3260,8 @@
 					"script": {
 						"id": "7da58ee3-d69f-481f-8d90-0ea23f043334",
 						"exec": [
-							"var method=pm.variables.get('METHOD');\r",
+							"\r",
+							"var method=pm.variables.get('method');\r",
 							"pm.variables.set('METHOD',method);"
 						],
 						"type": "text/javascript",
