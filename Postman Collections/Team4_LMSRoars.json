@@ -14,7 +14,7 @@
 						"id": "cacad74a-4195-48a6-a77d-067ff33f647a",
 						"exec": [
 							"\r",
-							"const result = pm.response.json();\r",
+							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
 							"console.log(\"METHOD NAME IS :\", method);\r",
@@ -28,7 +28,7 @@
 							"\r",
 							"\r",
 							"if (pm.response.code === 200) {\r",
-							"\r",
+							"const result = pm.response.json();\r",
 							"//1.code validation\r",
 							"pm.test(\"Status code is 200 or 201\", () => {\r",
 							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);\r",
