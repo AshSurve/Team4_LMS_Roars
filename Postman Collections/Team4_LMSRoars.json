@@ -17,8 +17,8 @@
 							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
-							"console.log(\"METHOD NAME IS :\", method);\r",
-							"console.log(\"Current request data:\", requestData);\r",
+							"//console.log(\"METHOD NAME IS :\", method);\r",
+							"//console.log(\"Current request data:\", requestData);\r",
 							"\r",
 							"// Check the response status code from json file\r",
 							"    pm.test(\"Status Code Validation\", function () {\r",
@@ -143,7 +143,7 @@
 							"\r",
 							"console.log(\"Base URL:\", pm.variables.get(\"baseURL\"));\r",
 							"console.log(\"Endpoint:\", pm.variables.get(\"endpoint\"));\r",
-							"console.log(\"METHOD NAME IS :\", method);\r",
+							"//console.log(\"METHOD NAME IS :\", method);\r",
 							"console.log(\"Current request data:\", requestData);"
 						],
 						"type": "text/javascript",
@@ -4091,6 +4091,10 @@
 		},
 		{
 			"key": "increment",
+			"value": ""
+		},
+		{
+			"key": "userId",
 			"value": ""
 		}
 	]
