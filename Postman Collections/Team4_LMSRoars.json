@@ -246,12 +246,6 @@
 				"followAuthorizationHeader": false
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{tt}}"
-					}
-				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"url": "{{baseURL}}{{endpoint}}{{userId}}"
@@ -866,12 +860,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{tt}}"
-					}
-				},
 				"method": "{{METHOD}}",
 				"header": [],
 				"url": "{{baseURL}}{{endpoint}}{{programId1}}"
@@ -4120,83 +4108,11 @@
 			"value": ""
 		},
 		{
-			"key": "prg1_batchName1",
-			"value": ""
-		},
-		{
-			"key": "prg1_batchId2",
-			"value": ""
-		},
-		{
-			"key": "prg1_batchName2",
-			"value": ""
-		},
-		{
-			"key": "prg2_batchId1",
-			"value": ""
-		},
-		{
-			"key": "prg2_batchName1",
-			"value": ""
-		},
-		{
-			"key": "prg2_batchId2",
-			"value": ""
-		},
-		{
-			"key": "prg2_batchName2",
-			"value": ""
-		},
-		{
 			"key": "classId",
 			"value": ""
 		},
 		{
-			"key": "classTopic",
-			"value": ""
-		},
-		{
-			"key": "classDate",
-			"value": ""
-		},
-		{
-			"key": "classNo",
-			"value": ""
-		},
-		{
-			"key": "classStaffId",
-			"value": ""
-		},
-		{
-			"key": "classStatus",
-			"value": ""
-		},
-		{
-			"key": "classDescription",
-			"value": ""
-		},
-		{
-			"key": "classComments",
-			"value": ""
-		},
-		{
-			"key": "classNotes",
-			"value": ""
-		},
-		{
-			"key": "classRecordingPath",
-			"value": ""
-		},
-		{
 			"key": "batchName",
-			"value": ""
-		},
-		{
-			"key": "classScheduledDates",
-			"value": ""
-		},
-		{
-			"key": "increment",
 			"value": ""
 		},
 		{
@@ -4205,6 +4121,14 @@
 		},
 		{
 			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "batchID",
+			"value": ""
+		},
+		{
+			"key": "Token",
 			"value": ""
 		}
 	]
