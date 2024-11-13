@@ -44,6 +44,8 @@
 							"    pm.collectionVariables.set(\"userId\",result.userId);\r",
 							"    console.log(\"UserId\", result.userId);\r",
 							"\r",
+							"    \r",
+							"\r",
 							"//2.Token Authentication and data Validation\r",
 							"\r",
 							"pm.test(\"Token is present and type is bearer \", () => {\r",
