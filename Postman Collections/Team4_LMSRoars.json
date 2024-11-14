@@ -3096,7 +3096,7 @@
 			"request": {
 				"method": "{{METHOD}}",
 				"header": [],
-				"url": "{{baseURL}}{{GetClassRecordingsByClassIdEndpoint}}{{classId2}}"
+				"url": "{{baseURL}}{{GetClassRecordingsByClassIdEndpoint}}{{classId}}"
 			},
 			"response": []
 		},
