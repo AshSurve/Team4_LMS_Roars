@@ -654,6 +654,8 @@
 							"      pm.collectionVariables.unset(programnm);\r",
 							"      pm.collectionVariables.set(program,programid );\r",
 							"      pm.collectionVariables.set(programnm,programname);\r",
+							"       pm.collectionVariables.set(\"deleteprogramId1\",programid );\r",
+							"      pm.collectionVariables.set(\"deleteprogramName1\",programname);\r",
 							"      incr++;\r",
 							"      pm.collectionVariables.set(\"increment\", incr);\r",
 							"      pm.test(\"Validate Program Name in response\", function () {   \r",
@@ -2310,7 +2312,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\r\n    \"csId\": \"{{csId}}\",\r\n    \"batchId\": \"{{prg1_batchId1}}\",\r\n    \"classNo\": \"{{classNo}}\",\r\n    \"classDate\": \"{{classDate}}\",\r\n    \"classTopic\": \"{{classTopic}}\",\r\n    \"classStatus\": \"{{classStatus}}\",\r\n    \"classStaffId\": \"{{classStaffId}}\",\r\n    \"classDescription\": \"{{classDescription}}\",\r\n    \"classComments\": \"{{classComments}}\",\r\n    \"classNotes\": \"{{classNotes}}\",\r\n    \"classRecordingPath\": \"{{classRecordingPath}}\",\r\n    \"batchName\": \"{{prg1_batchName1}}\",\r\n    \"classScheduledDates\": [\r\n        \"{{classScheduledDates}}\"\r\n    ]\r\n    }\r\n\r\n",
+					"raw": " {\r\n    \"csId\": \"{{csId}}\",   \r\n    \"classNo\": \"{{classNo}}\",\r\n    \"classDate\": \"{{classDate}}\",\r\n    \"classTopic\": \"{{classTopic}}\",\r\n    \"classStatus\": \"{{classStatus}}\",\r\n    \"classStaffId\": \"{{classStaffId}}\",\r\n    \"classDescription\": \"{{classDescription}}\",\r\n    \"classComments\": \"{{classComments}}\",\r\n    \"classNotes\": \"{{classNotes}}\",\r\n    \"classRecordingPath\": \"{{classRecordingPath}}\",\r\n    \"batchName\": \"{{prg1_batchName1}}\",\r\n    \"classScheduledDates\": [\r\n        \"{{classScheduledDates}}\"\r\n    ]\r\n    }\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3418,7 +3420,7 @@
 			"request": {
 				"method": "{{METHOD}}",
 				"header": [],
-				"url": "{{baseURL}}{{DEL_BY_PRGM_ID_ENDPOINT}}{{programId1}}"
+				"url": "{{baseURL}}{{DEL_BY_PRGM_ID_ENDPOINT}}{{deleteprogramId1}}"
 			},
 			"response": []
 		},
