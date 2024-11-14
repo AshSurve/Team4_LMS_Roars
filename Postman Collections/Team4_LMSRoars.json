@@ -378,7 +378,7 @@
 							"\r",
 							"        var possibleMessages = [          \r",
 							"            'Application Error',\r",
-							"            'false',\r",
+							"            'Request method \\'POST\\' is not supported',\r",
 							"            'Invalid endpoint'\r",
 							"        ];\r",
 							"     var messageFound = possibleMessages.some(msg => responseMessage.includes(msg));       \r",
