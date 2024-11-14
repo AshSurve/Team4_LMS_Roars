@@ -2477,7 +2477,7 @@
 						}
 					}
 				},
-				"url": "{{baseURL}}{{endpoint}}{{prg1_batchId1}}"
+				"url": "{{baseURL}}{{endpoint}}{{prg2_batchId2}}"
 			},
 			"response": []
 		},
@@ -3096,7 +3096,7 @@
 			"request": {
 				"method": "{{METHOD}}",
 				"header": [],
-				"url": "{{baseURL}}{{GetClassRecordingsByClassIdEndpoint}}{{classId}}"
+				"url": "{{baseURL}}{{GetClassRecordingsByClassIdEndpoint}}{{classId2}}"
 			},
 			"response": []
 		},
@@ -3259,14 +3259,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"batchId\": \"{{prg1_batchId1}}\",\r\n    \"classNo\": \"{{classNo}}\",\r\n    \"classDate\": \"{{classDate}}\",\r\n    \"classTopic\": \"{{classTopic}}\",\r\n    \"classStatus\": \"{{classStatus}}\",\r\n    \"classStaffId\": \"{{classStaffId}}\",\r\n    \"classDescription\": \"{{classDescription}}\",\r\n    \"classComments\": \"{{classComments}}\",\r\n    \"classNotes\": \"{{classNotes}}\",\r\n    \"classRecordingPath\": \"{{classRecordingPath}}\",\r\n    \"batchName\": \"{{prg1_batchName1}}\",\r\n    \"classScheduledDates\": [\r\n        \"{{classScheduledDates}}\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"batchId\": \"{{prg2_batchId2}}\",\r\n    \"classNo\": \"{{classNo}}\",\r\n    \"classDate\": \"{{classDate}}\",\r\n    \"classTopic\": \"{{classTopic}}\",\r\n    \"classStatus\": \"{{classStatus}}\",\r\n    \"classStaffId\": \"{{classStaffId}}\",\r\n    \"classDescription\": \"{{classDescription}}\",\r\n    \"classComments\": \"{{classComments}}\",\r\n    \"classNotes\": \"{{classNotes}}\",\r\n    \"classRecordingPath\": \"{{classRecordingPath}}\",\r\n    \"batchName\": \"{{prg2_batchName2}}\",\r\n    \"classScheduledDates\": [\r\n        \"{{classScheduledDates}}\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseURL}}{{UpdateClassEndpoint}}{{classId}}"
+				"url": "{{baseURL}}{{UpdateClassEndpoint}}{{classId2}}"
 			},
 			"response": []
 		},
