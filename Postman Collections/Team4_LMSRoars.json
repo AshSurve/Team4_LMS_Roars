@@ -529,16 +529,16 @@
 							"pm.test(\"Status Code Validation\", function () {\r",
 							"    pm.expect(pm.response.code).to.equal(pm.variables.get('statuscode'));\r",
 							"});\r",
-							"//content type validation\r",
-							"  pm.test(\"Content-Type is application/json\", () => {\r",
-							"      pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
-							"  });\r",
+							"\r",
 							"if(pm.response.code === 200){\r",
 							"  pm.test(\" Schema Validation\",function () {\r",
 							"    pm.response.to.have.jsonSchema(PgmSchema);\r",
 							"  });\r",
 							"\r",
-							"  \r",
+							"//content type validation\r",
+							"  pm.test(\"Content-Type is application/json\", () => {\r",
+							"      pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+							"  });  \r",
 							"  \r",
 							"    pm.test(\"Data Type Validation\", function () {\r",
 							"    const result = pm.response.json();  // Parse the JSON response\r",
@@ -898,6 +898,20 @@
 							"    pm.expect(jsonData.lastModTime).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3})?([+-]\\d{2}:\\d{2}|Z)$/);\r",
 							"        \r",
 							"});\r",
+							"   }\r",
+							"   else if(pm.response.code != 200 ){\r",
+							"    var responseMessage = pm.response.text(); \r",
+							"    console.log(responseMessage);               \r",
+							"\r",
+							"        var possibleMessages = [          \r",
+							"            'Not Found',\r",
+							"            'Method Not Allowed',\r",
+							"            'false',\r",
+							"            'Invalid endpoint'\r",
+							"        ];\r",
+							"     var messageFound = possibleMessages.some(msg => responseMessage.includes(msg));   \r",
+							"     pm.test(\"Error Message Validation\", function () {    \r",
+							"       pm.expect(messageFound).to.be.true;});\r",
 							"   };\r",
 							"\t\r",
 							"\r",
@@ -4284,43 +4298,11 @@
 			"value": ""
 		},
 		{
-			"key": "classTopic",
+			"key": "batchID",
 			"value": ""
 		},
 		{
-			"key": "classDate",
-			"value": ""
-		},
-		{
-			"key": "classNo",
-			"value": ""
-		},
-		{
-			"key": "classStaffId",
-			"value": ""
-		},
-		{
-			"key": "classStatus",
-			"value": ""
-		},
-		{
-			"key": "classDescription",
-			"value": ""
-		},
-		{
-			"key": "classComments",
-			"value": ""
-		},
-		{
-			"key": "classNotes",
-			"value": ""
-		},
-		{
-			"key": "classRecordingPath",
-			"value": ""
-		},
-		{
-			"key": "classScheduledDates",
+			"key": "Token",
 			"value": ""
 		}
 	]
