@@ -2260,6 +2260,8 @@
 							"if (pm.response.code === 201 ) {\r",
 							"    console.log('creating collectionVariable - classId');\r",
 							"    pm.collectionVariables.set(\"classId\", result.csId);\r",
+							"    console.log('creating another collectionVariable - classId');\r",
+							"    pm.collectionVariables.set(\"classId2\", result.csId);\r",
 							"    console.log('creating collectionVariable - classTopic');\r",
 							"    pm.collectionVariables.set(\"classTopic\", result.classTopic);\r",
 							"    // Updated by Renu for Update class\r",
