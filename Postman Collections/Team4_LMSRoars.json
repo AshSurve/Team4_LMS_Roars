@@ -4097,7 +4097,7 @@
 			"response": []
 		},
 		{
-			"name": "DEL_ALL_PRG BAT_BY USER ID",
+			"name": "DEL_ALL_PRG_BAT_BY_USER_ID",
 			"event": [
 				{
 					"listen": "test",
