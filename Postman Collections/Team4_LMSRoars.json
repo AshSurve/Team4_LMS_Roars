@@ -4000,7 +4000,7 @@
 			"response": []
 		},
 		{
-			"name": "USERROLE_PRG BATCH MAP",
+			"name": "USERROLE_PRG_BATCH_MAP",
 			"event": [
 				{
 					"listen": "test",
